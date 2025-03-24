@@ -3,7 +3,7 @@ using UnitTestDemoApplication.Data;
 using UnitTestDemoApplication.Interfaces;
 using UnitTestDemoApplication.Models;
 
-namespace UnitTestDemoApplication.Services;
+namespace UnitTestDemoApplication.Repositories;
 
 /// <summary>
 /// Service for managing todo items. Can add a new item, and get a specific item by id.

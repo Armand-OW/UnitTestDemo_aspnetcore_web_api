@@ -214,3 +214,4 @@
 /Users/ow/Desktop/UnitTestDemo/UnitTestDemoApplication/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/ow/Desktop/UnitTestDemo/UnitTestDemoApplication/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/ow/Desktop/UnitTestDemo/UnitTestDemoApplication/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/ow/Desktop/UnitTestDemo/UnitTestDemoApplication/obj/Debug/net9.0/UnitTestDemoApplication.sourcelink.json

@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using UnitTestDemoApplication.Data;
 using UnitTestDemoApplication.Interfaces;
+using UnitTestDemoApplication.Repositories;
 using UnitTestDemoApplication.Services;
 
 var builder = WebApplication.CreateBuilder(args);
