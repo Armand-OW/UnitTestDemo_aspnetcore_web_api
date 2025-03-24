@@ -28,4 +28,17 @@ public class TodoRepository : ITodoRepository
         await _context.SaveChangesAsync();
         return item;
     }
+
+    public async Task<TodoItem?> ToggleCompletionAsync(int id)
+    {
+        TodoItem? item = await _context.TodoItems.FindAsync(id);
+        if (item == null)
+        {
+            return item;
+        }
+
+        item.IsCompleted = !item.IsCompleted;
+        await _context.SaveChangesAsync();
+        return item;
+    }
 }
