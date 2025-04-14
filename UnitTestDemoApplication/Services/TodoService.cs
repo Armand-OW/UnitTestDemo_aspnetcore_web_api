@@ -21,6 +21,7 @@ public class TodoService
 
     public async Task<TodoItem> AddTodoAsync(string title)
     {
+        Console.WriteLine($"Adding new todo item with title: {title}");
         var newItem = new TodoItem { Title = title, IsCompleted = false };
         return await _repository.AddAsync(newItem);
     }
