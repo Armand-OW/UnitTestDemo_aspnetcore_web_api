@@ -123,7 +123,7 @@ public class TodoServiceTest
         Assert.NotNull(result); //item found
         Assert.Equal(changedTodoItem, result); //making sure the objects match
         Assert.Equal("Changed Title", result.Title); //making sure title is correct
-        Assert.False(result.IsCompleted); //making sure it is completed
+        Assert.True(result.IsCompleted); //making sure it is completed
         Assert.Equal(itemId, result.Id); //making sure the id is correct
     }
 
