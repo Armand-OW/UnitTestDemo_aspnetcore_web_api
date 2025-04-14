@@ -1,6 +1,6 @@
-name: CI
+name: CI #name should be unique in the repository - specifies what it does
 
-on:
+on: #when should this workflow run
   push:
     branches:
       - main
@@ -8,9 +8,9 @@ on:
     branches:
       - main
 
-jobs:
-  test:
-    runs-on: ubuntu-latest
+jobs: #jobs are the individual tasks that make up the workflow
+  test: #name of the job
+    runs-on: ubuntu-latest #specifies the type of virtual machine to run the job on
 
     steps:
       - name: Checkout code
@@ -28,4 +28,4 @@ jobs:
         run: dotnet build UnitTestDemo.sln --no-restore --configuration Release
 
       - name: Run tests
-        run: dotnet test UnitTestDemoApplication.Tests/UnitTestDemoApplication.Tests.csproj --no-build --configuration Release
+        run: dotnet test UnitTestDemo.Tests/UnitTestDemo.Tests.csproj --no-build --configuration Release
